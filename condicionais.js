@@ -257,6 +257,27 @@ function exercicio10() {
 //     - O usuário insere três lados.
 //     - Verifique se forma um triângulo e classifique como equilátero, isósceles ou escaleno.
 
+// equilaterio - 3 lados iguais
+// isoceles - 2 lados iguais e 1 diferente
+// escaleno - 3 lados diferentes
+
+function exercicio11(){
+
+    let ladoA = prompt("Insira o Lado A: ");
+    let ladoB = prompt("Insira o Lado B: ");
+    let ladoC = prompt("Insira o Lado C: ");
+
+    if (ladoA == ladoB && ladoA == ladoC) {
+        alert("É um Triângulo Equilátero");
+   } else if (ladoA == ladoB && ladoA != ladoC){
+    alert("É um Triângulo Equilátero");
+
+   }
+
+
+}
+
+
 // 2. **Conversão de notas para conceitos:**
 //     - O usuário insere uma nota (0-100).
 //     - Converta para conceitos:
