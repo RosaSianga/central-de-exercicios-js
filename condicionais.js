@@ -163,19 +163,15 @@ function exercicio07() {
 
     if (operador == "+") {
         valor = Number(num1) + Number(num2)
-        alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
     } else if (operador == "-") {
         valor = Number(num1) - Number(num2)
-        alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
     } else if (operador == "*") {
         valor = Number(num1) * Number(num2)
-        alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
     } else if (operador == "/") {
         valor = Number(num1) / Number(num2)
-        alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
-
     }
 
+    alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
 }
 
 
@@ -261,7 +257,7 @@ function exercicio10() {
 // isoceles - 2 lados iguais e 1 diferente
 // escaleno - 3 lados diferentes
 
-function exercicio11(){
+function exercicio11() {
 
     let ladoA = prompt("Insira o Lado A: ");
     let ladoB = prompt("Insira o Lado B: ");
@@ -269,28 +265,73 @@ function exercicio11(){
 
     if (ladoA == ladoB && ladoA == ladoC) {
         alert("É um Triângulo Equilátero");
-   } else if (ladoA == ladoB && ladoA != ladoC){
-    alert("É um Triângulo Equilátero");
-
-   }
-
+    } else if ((ladoA == ladoB && ladoA != ladoC) || (ladoB == ladoC && ladoB != ladoA) || (ladoA == ladoC && ladoA != ladoB)) {
+        alert("É um Triângulo Isósceles");
+    } else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC) {
+        alert("É um Triângulo Escaleno");
+    }
 
 }
-
 
 // 2. **Conversão de notas para conceitos:**
 //     - O usuário insere uma nota (0-100).
 //     - Converta para conceitos:
 //     - `A` (90-100), `B` (80-89), `C` (70-79), `D` (60-69), `F` (<60).
 
+
+function exercicio12() {
+
+    nota = prompt("Digite uma nota entre 0 e 100");
+
+    if (nota >= 90 && nota <= 100) {
+        alert("Nota final A");
+    } else if (nota >= 80 && nota <= 89) {
+        alert("Nota final B");
+    } else if (nota >= 70 && nota <= 79) {
+        alert("Nota final C");
+    } else if (nota >= 60 && nota <= 69) {
+        alert("Nota final D");
+    } else if (nota < 60) {
+        alert("Nota final F");
+    } else {
+        alert("Nota inválida - superior a 100");
+    }
+
+}
+
 // 3. **Cálculo de IMC:**
 //     - Peça peso e altura.
 //     - Calcule o IMC e classifique como abaixo do peso, normal, sobrepeso ou obesidade.
 
+
+function exercicio13(){
+
+    let peso = prompt("Digite o peso: ");
+    let altura = prompt("digite a altura: ")
+    let pct;
+
+    pct = (peso / (altura *altura));
+    pct = parseFloat(pct).toFixed(2);
+
+    if (pct < 18.5){
+        alert("IMC = " + pct + " - Abaixo do peso");
+    } else if (pct >= 18.5 && pct < 24.9) {
+        alert("IMC = " + pct + " - Peso normal");
+    } else if (pct >= 25 && pct <= 29.9) {
+        alert("IMC = " + pct + " - Sobrepeso");
+    } else {
+        alert("IMC = " + pct + " - Obesidade");
+    }
+
+}
 
 // 4. **Validação de ano bissexto:**
 //     - Peça um ano e verifique se é bissexto.
 //     - Um ano é bissexto se for divisível por 4, mas não por 100, exceto se for divisível por 400.
 
 
-exercicio10();
+function exercicio14() {
+
+}
+
+exercicio141();
