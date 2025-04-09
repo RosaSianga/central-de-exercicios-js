@@ -304,16 +304,16 @@ function exercicio12() {
 //     - Calcule o IMC e classifique como abaixo do peso, normal, sobrepeso ou obesidade.
 
 
-function exercicio13(){
+function exercicio13() {
 
     let peso = prompt("Digite o peso: ");
     let altura = prompt("digite a altura: ")
     let pct;
 
-    pct = (peso / (altura *altura));
+    pct = (peso / (altura * altura));
     pct = parseFloat(pct).toFixed(2);
 
-    if (pct < 18.5){
+    if (pct < 18.5) {
         alert("IMC = " + pct + " - Abaixo do peso");
     } else if (pct >= 18.5 && pct < 24.9) {
         alert("IMC = " + pct + " - Peso normal");
@@ -332,6 +332,15 @@ function exercicio13(){
 
 function exercicio14() {
 
+    let ano = prompt("Digite o ano");
+
+    if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0 )) {
+        alert("Ano " + ano + " é bissexto");
+
+    } else {
+        alert("Ano " + ano + " não é bissexto");
+    }
+
 }
 
-exercicio141();
+exercicio14();
