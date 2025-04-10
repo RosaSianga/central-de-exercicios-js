@@ -119,13 +119,13 @@ function exercicio04() {
 
 function exercicio05() {
 
-    let numGerado = Math.floor(100* Math.random() + 1);
+    let numGerado = Math.floor(100 * Math.random() + 1);
     let numero;
 
     alert("Advinhe o número escolhido");
 
     debugger;
-    
+
     do {
 
         numero = prompt("Digite o número:");
@@ -152,11 +152,14 @@ function exercicio06() {
 
     let numero = prompt("Digite um número: ");
 
+    if (numero < 0) {
+        alert("Número inválido")
+    } else {
+        while (numero >= 0) {
 
-    while (numero >= 0) {
-
-        alert(numero)
-        numero--;
+            alert(numero)
+            numero--;
+        }
     }
 }
 
@@ -170,18 +173,22 @@ function exercicio06() {
 
 function exercicio07() {
 
-    let numero = "Digite um número:"
-    let soma;
+    let numero = prompt("Digite um número:")
+    let soma = 0;
     let cont = 0;
+    let digito;
 
-    while (cont <= numero.length) {
+    if (numero < 0) {
+        alert("Número inválido")
+    } else {
+        while (cont < numero.length) {
 
-        soma = soma + parseInt(numero(cont));
-
-        cont ++
-        
+            digito = numero[cont];
+            soma = Number(soma) + Number(digito);
+            cont++
+        }
+        alert("Soma dos número é : " + soma)
     }
-
 
 }
 
@@ -190,10 +197,48 @@ function exercicio07() {
 //     - Peça um número ao usuário.
 //     - Use um `for` ou `while` para calcular o fatorial desse número.
 
+function exercicio08() {
+
+    let numero = prompt("Digite um número inteiro");
+    let soma = 1;
+
+    while (numero != 0) {
+        soma = soma * numero;
+        numero = numero - 1;        
+    }
+
+    alert(soma);
+}
+
 
 // 3. **Inverter um número:**
 //     - Peça um número ao usuário.
 //     - Use um `while` para inverter seus dígitos (exemplo: `123` → `321`).
+
+
+function exercicio09() {
+
+    let numero = prompt("Digite um número:")
+    let resultado = "";
+    let cont = 0;
+    let digito;
+
+    if (numero < 0) {
+        alert("Número inválido")
+    } else {
+        while (cont < numero.length) {
+
+            digito = numero[cont];
+            resultado = resultado + digito;
+            cont++
+        }
+
+        resultado = resultado.toString().split('').reverse().join('');
+
+        alert("Número Digitado: " + numero + " e Número convertido : " + resultado)
+    }
+
+}
 
 
 // 4. **Números perfeitos de 1 a 1000:**
@@ -204,4 +249,6 @@ function exercicio07() {
 
 
 
-exercicio05();
+
+
+exercicio08();
