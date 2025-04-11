@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #2589bd;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+h1 {
+    font-family: inter;
+    font-size: 40px;
+    color: red;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.exercicio h2 {
+    font-family: inter;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+h3 {
+    font-family: inter;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: blue;
+}
+
+p {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.pagina {
+    display: flex;
+    
+}
+
+.logs-container {
+    padding-top: 50px;
+}
+
+.logs-container  h2 {
+    font-family: inter;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logs-container p {
+    font-family: inter;
+    font-family: 15px;
+}

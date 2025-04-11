@@ -10,7 +10,7 @@ let numero;
 let nota;
 
 
-function execicio01() {
+function verMaioridade() {
 
     idade = prompt("Digite a idade");
 
@@ -20,6 +20,7 @@ function execicio01() {
         alert("Ele é menor de idade")
     }
 
+    gerarLog("Exercício Condicional 01 - Verificar a maioridade - executado no alert as " + new Date().toLocaleString());
 }
 
 // -------------------------------------------------------------------------------    
@@ -28,7 +29,7 @@ function execicio01() {
 //     - Peça ao usuário para inserir um número.
 //     - Use um `if-else` para verificar se o número é positivo, negativo.
 
-function exercicio02() {
+function verPositivoNegativo() {
 
     numero = prompt("Digite um número");
 
@@ -39,13 +40,16 @@ function exercicio02() {
         alert("Negativo.")
 
     }
+
+    gerarLog("Exercício Condicional 02 - Verificar se o número positivo ou negativo - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 3. **Aprovação em uma prova:**
 //     - O usuário insere a nota de um aluno (0 a 100).
 //     - Se a nota for maior ou igual a 60, exibir "Aprovado", senão "Reprovado".
 
-function exercicio03() {
+function aprovacaoProva() {
 
     nota = prompt("Digite a nota o aluno (0 a 100)");
 
@@ -53,7 +57,7 @@ function exercicio03() {
 
         alert("Nota invalida");
         nota = prompt("Digite novamente a nota entre 0 a 100");
-        exercicio03A();
+        loopAprovacaoProva();
 
     } else if (nota >= 60) {
 
@@ -63,9 +67,11 @@ function exercicio03() {
         alert("Reprovado");
     }
 
+    gerarLog("Exercício Condicional 03 - Verificar aprovação da prova  - executado no alert as " + new Date().toLocaleString());
+
 }
 
-function exercicio03A() {
+function loopAprovacaoProva() {
 
     if (nota < 0 || nota > 100) {
 
@@ -87,7 +93,7 @@ function exercicio03A() {
 //     - Peça ao usuário para inserir um número.
 //     - Use um `if-else` para verificar se o número é positivo, negativo ou zero.
 
-function execicio04() {
+function verpPositivoNegativoZero() {
 
     numero = prompt("Digite um número");
 
@@ -99,6 +105,9 @@ function execicio04() {
     } else {
         alert("É zero.")
     }
+
+    gerarLog("Exercício Condicional 04 - Verificar se o número positivo, negativo ou zero  - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -106,7 +115,7 @@ function execicio04() {
 //     - Peça ao usuário para inserir sua idade.
 //     - Exiba se ele é "Criança" (0-12), "Adolescente" (13-17) ou "Adulto" (18+).
 
-function exercicio05() {
+function classificarIdade() {
 
     idade = prompt("Digite a idade");
 
@@ -120,6 +129,8 @@ function exercicio05() {
         alert("Adulto")
     }
 
+    gerarLog("Exercício Condicional 05 - Classifica a idade  - executado no alert as " + new Date().toLocaleString());
+    
 }
 
 
@@ -127,7 +138,7 @@ function exercicio05() {
 //     - Peça ao usuário para inserir um número.
 //     - Use o operador `%` para verificar se o número é divisível por 2.
 
-function exercicio06() {
+function verParImpar() {
 
     let numero = prompt("Digite um número:");
 
@@ -138,6 +149,8 @@ function exercicio06() {
     } else {
         alert("Sendo assim o número é ímpar.");
     }
+
+    gerarLog("Exercício Condicional 06 - Verificar se o número é Impar ou Par - executado no alert as " + new Date().toLocaleString());
 
 }
 
@@ -153,7 +166,7 @@ let num3;
 //     - Peça dois números e uma operação (`+`, `-`, `*`, `/`).
 //     - Use um `if-else` para calcular o resultado e exibi-lo.
 
-function exercicio07() {
+function calculadora() {
 
 
     num1 = prompt("Digite 1ª número:");
@@ -172,6 +185,8 @@ function exercicio07() {
     }
 
     alert("Valores digitados foram : " + num1 + operador + num2 + " : Resultado da operaçãao : " + valor);
+
+    gerarLog("Exercício Condicional 07 - Calculadora - executado no alert as " + new Date().toLocaleString());
 }
 
 
@@ -179,7 +194,7 @@ function exercicio07() {
 //     - O usuário insere três números.
 //     - Use `if-else` para determinar e exibir o maior.
 
-function exercicio08() {
+function verNumMaior() {
 
     let maiorNum;
 
@@ -198,6 +213,8 @@ function exercicio08() {
 
     alert("Maior número digitado foi : " + maiorNum);
 
+    gerarLog("Exercício Condicional 08 - Verificar o maior número - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -205,7 +222,7 @@ function exercicio08() {
 //     - Se o valor da compra for maior que R$ 100, aplique 10% de desconto.
 //     - Caso contrário, exiba o valor normal.
 
-function exercicio09() {
+function descontoCompra() {
 
     debugger;
 
@@ -222,6 +239,9 @@ function exercicio09() {
         valorFinal = valor
         alert("Valor total da compra é " + valorFinal);
     }
+
+    gerarLog("Exercício Condicional 09 - Aplicar o desconto em compra  - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -229,7 +249,7 @@ function exercicio09() {
 //     - O usuário insere um nome de usuário e senha.
 //     - Se `usuario == "admin"` e `senha == "1234"`, exibir "Login bem-sucedido", caso contrário "Acesso negado".
 
-function exercicio10() {
+function login() {
 
     debugger;
 
@@ -242,6 +262,7 @@ function exercicio10() {
         alert("Acesso Negado")
     }
 
+    gerarLog("Exercício Condicional 10 - Validação de Login- executado no alert as " + new Date().toLocaleString());
 
 }
 
@@ -257,7 +278,7 @@ function exercicio10() {
 // isoceles - 2 lados iguais e 1 diferente
 // escaleno - 3 lados diferentes
 
-function exercicio11() {
+function classificarTriangulo() {
 
     let ladoA = prompt("Insira o Lado A: ");
     let ladoB = prompt("Insira o Lado B: ");
@@ -271,6 +292,8 @@ function exercicio11() {
         alert("É um Triângulo Escaleno");
     }
 
+    gerarLog("Exercício Condicional 11 - Classificação do Triângulo - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 2. **Conversão de notas para conceitos:**
@@ -279,7 +302,7 @@ function exercicio11() {
 //     - `A` (90-100), `B` (80-89), `C` (70-79), `D` (60-69), `F` (<60).
 
 
-function exercicio12() {
+function classificarNotas() {
 
     nota = prompt("Digite uma nota entre 0 e 100");
 
@@ -297,6 +320,8 @@ function exercicio12() {
         alert("Nota inválida - superior a 100");
     }
 
+    gerarLog("Exercício Condicional 12 - Classificar notas - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 3. **Cálculo de IMC:**
@@ -304,7 +329,7 @@ function exercicio12() {
 //     - Calcule o IMC e classifique como abaixo do peso, normal, sobrepeso ou obesidade.
 
 
-function exercicio13() {
+function calculoIMC() {
 
     let peso = prompt("Digite o peso: ");
     let altura = prompt("digite a altura: ")
@@ -323,6 +348,8 @@ function exercicio13() {
         alert("IMC = " + pct + " - Obesidade");
     }
 
+    gerarLog("Exercício Condicional 13 - Calcular o IMC - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 4. **Validação de ano bissexto:**
@@ -330,17 +357,19 @@ function exercicio13() {
 //     - Um ano é bissexto se for divisível por 4, mas não por 100, exceto se for divisível por 400.
 
 
-function exercicio14() {
+function anoBissexto() {
 
     let ano = prompt("Digite o ano");
 
-    if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0 )) {
+    if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
         alert("Ano " + ano + " é bissexto");
 
     } else {
         alert("Ano " + ano + " não é bissexto");
     }
 
+    gerarLog("Exercício Condicional 14 - Verificar o ano Bissexto - executado no alert as " + new Date().toLocaleString());
+
 }
 
-exercicio14();
+

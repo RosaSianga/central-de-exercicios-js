@@ -37,19 +37,22 @@ function exemploDoWhile() {
 // 1. **Contagem de 1 a 10:**
 //     - Use um `for` para exibir os números de 1 a 10 no console.
 
-function exercicio01() {
+function contagem() {
 
     for (let num = 1; num <= 10; num++) {
         alert("Número: " + num);
 
     }
+
+    gerarLog("Exercício Repetição 01 - Contagem - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 2. **Tabuada de um número:**
 //     - Peça um número ao usuário.
 //     - Exiba a tabuada desse número de 1 a 10 usando um `for`.
 
-function exercicio02() {
+function tabuada() {
 
     let num = prompt("Digite o número que deseja saber a tabuada:");
     let valor;
@@ -61,6 +64,9 @@ function exercicio02() {
         alert(num + " x " + index + " = " + valor);
 
     }
+
+    gerarLog("Exercício Repetição 02 - Tabuada - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -68,7 +74,7 @@ function exercicio02() {
 //     - Peça um número `N` ao usuário.
 //     - Use um `while` ou `for` para somar os números de `1` a `N`.
 
-function exercicio03() {
+function somaNaturais() {
 
     let num = prompt("Digite um número");
     let contador = 0;
@@ -84,6 +90,9 @@ function exercicio03() {
     }
 
     alert("soma dos número é : " + soma)
+
+    gerarLog("Exercício Repetição 03 - Soma dos números naturais - executado no alert as " + new Date().toLocaleString());
+
 }
 
 //************************************************************************************************************************************************************************* */
@@ -93,7 +102,7 @@ function exercicio03() {
 // 1. **Exibir os números pares de 1 a 50:**
 //     - Use um `for` ou `while` para exibir apenas os números pares de `1` a `50`.
 
-function exercicio04() {
+function numPares() {
 
     let num = 1;
     let sobra = 0;
@@ -109,6 +118,8 @@ function exercicio04() {
         num++;
     }
 
+    gerarLog("Exercício Repetição 04 - Exibe números pares - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 2. **Jogo de adivinhação:**
@@ -117,7 +128,7 @@ function exercicio04() {
 //     - Informe se o número inserido é maior ou menor que o correto.
 
 
-function exercicio05() {
+function advinhacao() {
 
     let numGerado = Math.floor(100 * Math.random() + 1);
     let numero;
@@ -143,12 +154,14 @@ function exercicio05() {
 
     } while (numGerado != numero);
 
+    gerarLog("Exercício Repetição 05 - Jogo de advinhação - executado no alert as " + new Date().toLocaleString());
+
 }
 
 // 3. **Contagem regressiva:**
 //     - Peça um número ao usuário e exiba uma contagem regressiva até 0 usando um `while`.
 
-function exercicio06() {
+function contagemRegressiva() {
 
     let numero = prompt("Digite um número: ");
 
@@ -161,6 +174,9 @@ function exercicio06() {
             numero--;
         }
     }
+
+    gerarLog("Exercício Repetição 06 - Regressiva - executado no alert as " + new Date().toLocaleString());
+
 }
 
 //************************************************************************************************************************************************************************* */
@@ -171,7 +187,7 @@ function exercicio06() {
 //     - Use um `while` para somar seus dígitos.
 
 
-function exercicio07() {
+function somaDigitos() {
 
     let numero = prompt("Digite um número:")
     let soma = 0;
@@ -190,6 +206,8 @@ function exercicio07() {
         alert("Soma dos número é : " + soma)
     }
 
+    gerarLog("Exercício Repetição 07 - Soma dos Digitos - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -197,7 +215,7 @@ function exercicio07() {
 //     - Peça um número ao usuário.
 //     - Use um `for` ou `while` para calcular o fatorial desse número.
 
-function exercicio08() {
+function fatorial() {
 
     let numero = prompt("Digite um número inteiro");
     let soma = 1;
@@ -208,6 +226,9 @@ function exercicio08() {
     }
 
     alert(soma);
+
+    gerarLog("Exercício Repetição 08 - Calcular o Fatorial - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -216,7 +237,7 @@ function exercicio08() {
 //     - Use um `while` para inverter seus dígitos (exemplo: `123` → `321`).
 
 
-function exercicio09() {
+function inverteNum() {
 
     let numero = prompt("Digite um número:")
     let resultado = "";
@@ -238,6 +259,8 @@ function exercicio09() {
         alert("Número Digitado: " + numero + " e Número convertido : " + resultado)
     }
 
+    gerarLog("Exercício Repetição 09 - Inverte o número  - executado no alert as " + new Date().toLocaleString());
+
 }
 
 
@@ -247,8 +270,3 @@ function exercicio09() {
 //     - Use um `for` aninhado para encontrar e exibir esses números até `1000`.
 
 
-
-
-
-
-exercicio08();

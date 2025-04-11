@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt - BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script</title>
 </head>
+
 <body>
-     <!-- <script src="script.js"></script> -->
-     <!-- <script src="condicionais.js"></script>  -->
-     <!-- <script src="repeticoes.js"></script> -->
-      <script src="uteis.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="uteis.js"></script>
+    <script src="condicionais.js"></script>
+    <script src="repeticoes.js"></script>
+    <link rel="stylesheet" href="exercicios.css">
+
+
+    <header></header>
+    <main class="pagina">
+
+        <div class="exercicio">
+
+            <h1>Central de Exercícios.</h1>
+
+            <h2>Exercícios de Condicionais</h2>
+
+            <h3>Exercício 01 - Verificar a maioridade </h3>
+            <p>Exercício que pede uma idade e mostra se a pessoa é de maior ou não.</p>
+            <button onclick="verMaioridade()">Executar exercício</button>
+
+            <h3>Exercício 02 - Verificar se o número positivo ou negativo </h3>
+            <p>Exercício que pede um número e mostra se Positivo ou Negativo.</p>
+            <button onclick="verPositivoNegativo()">Executar exercício</button>
+
+            <h3>Exercício 03 - Verificar aprovação da prova </h3>
+            <p>Exercício que pede a nota e identifica se foi Aprovado ou Reprovado.</p>
+            <button onclick="aprovacaoProva()">Executar exercício</button>
+
+            <h3>Exercício 04 - Verificar se o número positivo, negativo ou zero </h3>
+            <p>Exercício que pede um número e mostra se Positivo, Negativo ou Zero.</p>
+            <button onclick="verpPositivoNegativoZero()">Executar exercício</button>
+
+            <h3>Exercício 05 - Classifica a idade </h3>
+            <p>Exercício que pede uma idade e classifica entre Criança, Adolescente ou Adulto.</p>
+            <button onclick="classificarIdade()">Executar exercício</button>
+
+            <h3>Exercício 06 - Verificar se o número é Impar ou Par </h3>
+            <p>Exercício que pede um número e mostra se é Impar ou Par.</p>
+            <button onclick="verParImpar()">Executar exercício</button>
+
+            <h3>Exercício 07 - Calculadora </h3>
+            <p>Exercício que pede dois número e a operação para efetuar o calculo.</p>
+            <button onclick="calculadora()">Executar exercício</button>
+
+            <h3>Exercício 08 - Verificar o maior número </h3>
+            <p>Exercício que pede três número e identifica o maior.</p>
+            <button onclick="verNumMaior()">Executar exercício</button>
+
+            <h3>Exercício 09 - Aplicar o desconto em compra </h3>
+            <p>Exercício que pede o valor da compra e caso seja maior que R$100,00 aplica o desconto de 10%.</p>
+            <button onclick="descontoCompra()">Executar exercício</button>
+
+            <h3>Exercício 10 - Validação de Login </h3>
+            <p>Exercício que valida se o login de adimistrador está correto.</p>
+            <button onclick="verNumMaior()">Executar exercício</button>
+
+            <h3>Exercício 11 - Classificação do Triângulo </h3>
+            <p>Exercício que pede o valor de de lados e classifica se o triângulo é Equilátero, Isóceles ou Escaleno.
+            </p>
+            <button onclick="classificarTriangulo()">Executar exercício</button>
+
+            <h3>Exercício 12 - Classificar notas </h3>
+            <p>Exercício que pede a nota e classifica entre A(90-100), B(80-89), C(70-79), D(60-69) e F(menor que 60).
+            </p>
+            <button onclick="classificarNotas()">Executar exercício</button>
+
+            <h3>Exercício 13 - Calcular o IMC </h3>
+            <p>Exercício que pede a altura e peso para calcular o IMC e classifica.</p>
+            <button onclick="calculoIMC()">Executar exercício</button>
+
+            <h3>Exercício 14 - Verificar o ano Bissexto </h3>
+            <p>Exercício que pede o ano e verifica se é Bissexto.</p>
+            <button onclick="anoBissexto()">Executar exercício</button>
+
+            <h2>Exercícios de Repetição</h2>
+
+            <h3>Exercício 01 - Contagem </h3>
+            <p>Exercício exibe a contagem dos número de 1 a 10.</p>
+            <button onclick="contagem()">Executar exercício</button>
+
+            <h3>Exercício 02 - Tabuada </h3>
+            <p>Exercício que pede um número para exibir a tabuada.</p>
+            <button onclick="tabuada()">Executar exercício</button>
+
+            <h3>Exercício 03 - Soma dos números naturais </h3>
+            <p>Exercício que pede um número para apresentar a soma deles.</p>
+            <button onclick="somaNaturais()">Executar exercício</button>
+
+            <h3>Exercício 04 - Exibe números pares </h3>
+            <p>Exercício exibe os números pares de 1 a 50.</p>
+            <button onclick="numPares()">Executar exercício</button>
+
+            <h3>Exercício 05 - Jogo de advinhação </h3>
+            <p>Exercício gera um número aleatório e solicita que você acerte.</p>
+            <button onclick="advinhacao()">Executar exercício</button>
+
+            <h3>Exercício 06 - Regressiva </h3>
+            <p>Exercício pede um número maior que zero e exibe a contagem regressiva.</p>
+            <button onclick="contagemRegressiva()">Executar exercício</button>
+
+            <h3>Exercício 07 - Soma dos Digitos </h3>
+            <p>Exercício pede um número inteiro positivo e efetua a soma dos digitos.</p>
+            <button onclick="somaDigitos()">Executar exercício</button>
+
+            <h3>Exercício 08 - Calcular o Fatorial </h3>
+            <p>Exercício pede um número e efetua o calculo do fator.</p>
+            <button onclick="fatorial()">Executar exercício</button>
+
+            <h3>Exercício 09 - Inverte o número </h3>
+            <p>Exercício pede um número e inverte seus digitos.</p>
+            <button onclick="inverteNum()">Executar exercício</button>
+
+        </div>
+
+
+        <div class="logs-container">
+            
+            <h2>Logs</h2>
+
+        </div>
+    </main>
+
 </body>
+
 </html>
