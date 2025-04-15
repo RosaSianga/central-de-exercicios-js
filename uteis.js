@@ -166,7 +166,7 @@ function multiplicarNum() {
 function adicionarSufixo() {
 
     const palavras = ["olá", "mundo", "javascript"];
-    const enfatizadas = palavras.map(palavra => palavra + "!!!");
+    const enfatizadas = palavras.map(palavra => palavra + " !!!");
     alert(JSON.stringify(enfatizadas));
 
 }
@@ -177,7 +177,27 @@ function adicionarSufixo() {
 function adicionarPrefixo() {
 
     const nomes = ["ana", "bruno", "carla"];
-    const nomesMaiusculos = nomes.map(nome => "Colaborador " + nome);
-    alert(JSON.stringify(nomesMaiusculos));
+    const nomesColaboradores = nomes.map(nome => "Colaborador " + nome);
+    alert(JSON.stringify(nomesColaboradores));
 
 }
+
+//Intermediários** (Aplicações Práticas)
+
+// 1. Extraindo nomes de objetos**
+//Dado um array de objetos representando pessoas, crie um novo array contendo apenas os nomes.
+
+
+function listaNomes() {
+
+    const pessoas = [
+        { nome: "João", idade: 25 },
+        { nome: "Maria", idade: 30 },
+        { nome: "Carlos", idade: 28 }
+    ];
+    const nomes = pessoas.map(pessoa => pessoa.nome);
+    alert(JSON.stringify(nomes)); // ["João", "Maria", "Carlos"]
+
+}
+
+
